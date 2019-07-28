@@ -1,2 +1,8 @@
+<div class="container">
 <h1>Application Works!</h1>
 <button mat-raised-button (click)="openDialog()">Click here!</button>
+</div>
+<div class="container">
+<button (click)="getData()">get data</button>
+<p *ngIf="dataFromServ != undefined">{{dataFromServ.response}}</p>
+</div>
